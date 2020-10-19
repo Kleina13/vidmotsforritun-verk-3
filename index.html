@@ -8,6 +8,24 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+   
+      <a-marker preset='hiro'>
+        <a-entity
+            
+            collada-model='url("/donut.dae")'
+        
+        ></a-entity>
+        
+        </a-marker>
+  
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+<!--
 <body style='margin: 0px; overflow: scroll;'>
     <a-scene embedded arjs>
         <a-marker preset='hiro'>
@@ -21,3 +39,4 @@
 </body>
 
 </html>
+-->
