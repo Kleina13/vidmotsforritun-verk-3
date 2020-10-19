@@ -10,15 +10,14 @@
 
 
 <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;'>
    
-      <a-marker preset='hiro'>
-        <a-entity
+        <a-marker preset='hiro'>          
+            <a-entity
+                
+                collada-model='url("/donut.dae")'
             
-            collada-model='url("/donut.dae")'
-        
-        ></a-entity>
-        
+            ></a-entity>
         </a-marker>
   
         <a-entity camera></a-entity>
